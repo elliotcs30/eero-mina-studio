@@ -1,0 +1,204 @@
+:root{
+
+--primary:#C9A48D;
+--secondary:#E8DAD0;
+--background:#F5EFEA;
+--text:#6E5C50;
+--dark:#3F342E;
+
+}
+
+body{
+margin:0;
+font-family: "Noto Serif TC", serif;
+background:var(--background);
+color:var(--text);
+line-height:1.6;
+}
+
+
+/* container */
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+
+/* navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar a{
+text-decoration:none;
+color:var(--dark);
+margin-left:25px;
+font-size:15px;
+}
+
+.logo{
+font-weight:600;
+font-size:18px;
+}
+
+
+/* hero */
+
+.hero{
+height:60vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:var(--secondary);
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+margin-bottom:20px;
+}
+
+
+/* button */
+
+.btn{
+display:inline-block;
+padding:12px 28px;
+background:var(--primary);
+color:white;
+border-radius:30px;
+text-decoration:none;
+border:none;
+cursor:pointer;
+}
+
+.btn:hover{
+opacity:0.9;
+}
+
+
+/* works */
+
+.works-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.work-card{
+overflow:hidden;
+border-radius:10px;
+}
+
+.work-card img{
+width:100%;
+height:280px;
+object-fit:cover;
+transition:0.4s;
+}
+
+.work-card img:hover{
+transform:scale(1.05);
+}
+
+
+/* services */
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:40px;
+}
+
+.service-card{
+background:white;
+padding:40px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.service-card h3{
+margin-bottom:10px;
+font-size:22px;
+}
+
+
+/* price */
+
+.price-item{
+background:white;
+padding:25px;
+border-radius:10px;
+margin-top:20px;
+max-width:400px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+
+/* studio */
+
+.studio img{
+width:100%;
+max-width:500px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+
+/* booking */
+
+.booking form{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.booking input,
+.booking select{
+padding:10px;
+border-radius:6px;
+border:1px solid #ddd;
+}
+
+
+/* contact */
+
+.contact form{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.contact input,
+.contact textarea{
+padding:10px;
+border-radius:6px;
+border:1px solid #ddd;
+}
+
+
+/* footer */
+
+footer{
+text-align:center;
+padding:40px;
+margin-top:80px;
+background:white;
+}

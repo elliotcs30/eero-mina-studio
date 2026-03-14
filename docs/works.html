@@ -1,33 +1,68 @@
-<section>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1>Works</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Eero Mina Studio 高雄霧眉、飄眉、紋眉專業美容工作室，提供客製化眉型設計與LINE預約服務。">
+        <meta name="keywords" content="高雄霧眉,高雄飄眉,高雄紋眉,高雄美容工作室,Eero Mina">
+        <meta name="author" content="Eero Mina Studio">
 
-<div class="works-grid">
+        <meta property="og:title" content="Eero Mina Studio | 高雄霧眉飄眉工作室">
+        <meta property="og:description" content="高雄專業霧眉、飄眉美容工作室">
+        <meta property="og:image" content="https://你的github網址/images/cover.jpg">
+        <meta property="og:type" content="website">
 
-<div class="work-card">
-<img src="images/work1.jpg">
-</div>
+        <title>Eero Mina Studio</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<div class="work-card">
-<img src="images/work2.jpg">
-</div>
+    <body>
+        <nav class="navbar">
+        <div class="logo">Eero Mina</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="studio.html">Studio</a>
+            <a href="services.html">Services</a>
+            <a href="works.html">Works</a>
+            <a href="booking.html">Booking</a>
+        </div>
+    </nav>
 
-<div class="work-card">
-<img src="images/work3.jpg">
-</div>
+    <section>
+        <h1>Works</h1>
+        <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-da83760b-b030-43f9-8f3a-8714cb7ae56d" data-elfsight-app-lazy></div>
+    </section>
+    <div style="text-align:center;margin-top:40px;">
+        <a href="https://instagram.com/eero_mina" class="btn" target="_blank">
+        See More On Instagram
+        </a>
+    </div>
+    <footer>
+        <p>© Eero Mina Studio</p>
+        <a href="https://instagram.com/eero_mina" target="_blank">
+        Instagram
+        </a>
+    </footer>
 
-<div class="work-card">
-<img src="images/work4.jpg">
-</div>
+    <div id="lightbox" onclick="closeImage()">
+        <img id="lightbox-img">
+    </div>
+</body>
 
-<div class="work-card">
-<img src="images/work5.jpg">
-</div>
+<script>
+    function openImage(img){
+        document.getElementById("lightbox").style.display="flex"
+        document.getElementById("lightbox-img").src = img.src
+    }
+    function closeImage(){
+        document.getElementById("lightbox").style.display="none"
+    }
+</script>
 
-<div class="work-card">
-<img src="images/work6.jpg">
-</div>
-
-</div>
-
-</section>
+</html>

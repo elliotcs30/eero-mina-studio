@@ -1,23 +1,67 @@
-<section class="booking">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Eero Mina Studio 高雄霧眉、飄眉、紋眉專業美容工作室，提供客製化眉型設計與LINE預約服務。">
+        <meta name="keywords" content="高雄霧眉,高雄飄眉,高雄紋眉,高雄美容工作室,Eero Mina">
+        <meta name="keywords" content="beauty studio, eyebrow, lash, taipei">
+        <meta name="author" content="Eero Mina Studio">
 
-<h1>Book Appointment</h1>
+        <meta property="og:title" content="Eero Mina Studio | 高雄霧眉飄眉工作室">
+        <meta property="og:description" content="高雄專業霧眉、飄眉美容工作室">
+        <meta property="og:image" content="https://你的github網址/images/cover.jpg">
+        <meta property="og:type" content="website">
+        
+        <title>Eero Mina Studio</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<form>
+    <body>
+        <nav class="navbar">
+            <div class="logo">Eero Mina</div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="studio.html">Studio</a>
+                <a href="services.html">Services</a>
+                <a href="works.html">Works</a>
+                <a href="booking.html">Booking</a>
+            </div>
+        </nav>
 
-<input type="text" placeholder="Name">
+        <section class="booking">
+            <h1>Book Appointment</h1>
+            <button class="btn" onclick="lineBooking()">LINE 預約</button>
+        </section>
 
-<input type="date">
+        <footer>
+            <p>© Eero Mina Studio</p>
+            <a href="https://instagram.com/eero_mina" target="_blank">
+            Instagram
+            </a>
+        </footer>
 
-<select>
+        <div id="lightbox" onclick="closeImage()">
+            <img id="lightbox-img">
+        </div>
 
-<option>霧眉</option>
-<option>飄眉</option>
-<option>美睫</option>
+        <script>
+            function lineBooking() {
+                const name = document.getElementById("name").value
+                const date = document.getElementById("date").value
+                const service = document.getElementById("service").value
 
-</select>
+                const message = `預約資訊
+                姓名：${name}
+                日期：${date}
+                服務：${service}`
 
-<button class="btn">Book Now</button>
-
-</form>
-
-</section>
+                const url = "https://line.me/R/ti/p/@eeromina?text=" + encodeURIComponent(message)
+                window.open(url)
+            }
+        </script>
+    </body>
+</html>

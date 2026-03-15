@@ -180,11 +180,37 @@ section {
 
 
 /* footer */
-footer {
-    text-align:center;
-    padding:40px;
-    margin-top:80px;
-    background:white;
+footer{
+
+text-align:center;
+padding:40px 20px;
+background:#f7f4f2;
+margin-top:60px;
+
+}
+
+.footer-info{
+
+line-height:1.8;
+color:#555;
+
+}
+
+.footer-copy{
+
+margin-top:10px;
+font-size:14px;
+color:#999;
+
+}
+
+footer a{
+
+display:inline-block;
+margin-top:10px;
+text-decoration:none;
+color:#C9A48D;
+
 }
 
 #lightbox {
@@ -217,6 +243,11 @@ footer {
     .navbar{
         padding:20px;
     }
+    .booking-steps{
+
+grid-template-columns:1fr;
+
+}
 }
 
 .btn {
@@ -284,4 +315,80 @@ iframe {
     text-align:center;
     font-size:18px;
     line-height:2;
+}
+
+
+.booking{
+
+max-width:900px;
+margin:auto;
+padding:80px 20px;
+text-align:center;
+
+}
+
+.booking-intro{
+
+margin-bottom:40px;
+
+}
+
+.booking-steps{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+.step{
+
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+
+}
+
+.step h3{
+
+color:#C9A48D;
+
+}
+
+
+.ig-float{
+
+position:fixed;
+bottom:30px;
+right:30px;
+
+width:60px;
+height:60px;
+
+background:#E4405F;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+font-size:26px;
+
+text-decoration:none;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+
+z-index:999;
+
+transition:0.3s;
+
+}
+
+.ig-float:hover{
+
+transform:scale(1.1);
+
 }

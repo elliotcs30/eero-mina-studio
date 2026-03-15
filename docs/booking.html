@@ -3,18 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Eero Mina Studio 高雄霧眉、飄眉、紋眉專業美容工作室，提供客製化眉型設計與LINE預約服務。">
-        <meta name="keywords" content="高雄霧眉,高雄飄眉,高雄紋眉,高雄美容工作室,Eero Mina, beauty studio, 中正三路110號">
-        <meta name="keywords" content="beauty studio, eyebrow, lash, taipei">
+        <title>Eero Mina Studio | 高雄霧眉 飄眉 紋眉工作室</title>
+
+        <meta name="description" content="Eero Mina Studio 位於高雄市新興區中正三路110號，提供霧眉、飄眉與客製化眉型設計服務，歡迎透過 Instagram 私訊預約。">
+        <meta name="keywords" content="高雄霧眉,高雄飄眉,高雄紋眉,高雄美容工作室,Eero Mina Studio">
         <meta name="author" content="Eero Mina Studio">
+        <link rel="canonical" href="https://elliotcs30.github.io/eero-mina-studio/">
 
         <meta property="og:title" content="Eero Mina Studio | 高雄霧眉飄眉工作室">
         <meta property="og:description" content="高雄專業霧眉、飄眉美容工作室">
-        <meta property="og:image" content="https://你的github網址/images/cover.jpg">
+        <meta property="og:image" content="https://elliotcs30.github.io/eero-mina-studio/images/work1.jpg">
         <meta property="og:type" content="website">
-        
-        <title>Eero Mina Studio</title>
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+        <link rel="icon" href="images/favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -33,22 +34,54 @@
 
         <section class="booking">
             <h1>Book Appointment</h1>
-            <button class="btn" onclick="lineBooking()">LINE 預約</button>
-            <p>
-                地址：高雄市新興區中正三路110號
+            <p class="booking-intro">
+                預約流程非常簡單，只需透過 Instagram 私訊即可完成預約。
             </p>
+
+            <div class="booking-steps">
+                <div class="step">
+                    <h3>Step 1</h3>
+                    <p>查看服務項目</p>
+
+                    <a href="services.html" class="btn">
+                        View Services
+                    </a>
+                </div>
+                <div class="step">
+                    <h3>Step 2</h3>
+                    <p>查看作品</p>
+                    <a href="works.html" class="btn">
+                        View Works
+                    </a>
+                </div>
+                <div class="step">
+                    <h3>Step 3</h3>
+                    <p>透過 Instagram 私訊預約</p>
+                    <a href="https://instagram.com/eero_mina" class="btn" target="_blank">
+                        Instagram 預約
+                    </a>
+                </div>
+            </div>
         </section>
 
         <footer>
-            <p>© Eero Mina Studio</p>
-            <a href="https://instagram.com/eero_mina" target="_blank">
-            Instagram
-            </a>
+            <p class="footer-info">
+            高雄霧眉 · 高雄飄眉 · 高雄紋眉工作室<br>
+            Eero Mina Studio<br>
+            地址：高雄市新興區中正三路110號
+            </p>
+
+            <p class="footer-copy">
+            © 2026 Eero Mina Studio · Powered by Wandeli Technology
+            </p>
         </footer>
 
         <div id="lightbox" onclick="closeImage()">
             <img id="lightbox-img">
         </div>
+        <a href="https://instagram.com/eero_mina" class="ig-float" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
 
         <script>
             function lineBooking() {
@@ -57,12 +90,23 @@
                 const service = document.getElementById("service").value
 
                 const message = `預約資訊
-                姓名：${name}
-                日期：${date}
-                服務：${service}`
+                    姓名：${name}
+                    日期：${date}
+                    服務：${service}
+                    請透過IG私訊與我確認預約時間`
 
-                const url = "https://line.me/R/ti/p/@eeromina?text=" + encodeURIComponent(message)
+                const url = "https://instagram.com/eero_mina"
+
                 window.open(url)
+            }
+            
+            function openImage(img) {
+                document.getElementById("lightbox").style.display = "flex";
+                document.getElementById("lightbox-img").src = img.src;
+            }
+
+            function closeImage() {
+                document.getElementById("lightbox").style.display = "none";
             }
         </script>
     </body>

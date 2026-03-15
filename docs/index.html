@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <title>Eero Mina Studio | 高雄霧眉 飄眉 紋眉工作室</title>
+        <title>Eero Mina Studio | 高雄霧眉 飄眉 紋眉工作室</title>
 
-        <meta name="description" content="Eero Mina Studio 位於高雄市新興區中正三路110號，提供霧眉、飄眉、客製化眉型設計與LINE預約服務。">
-        <meta name="keywords" content="高雄霧眉,高雄飄眉,高雄紋眉,高雄美容工作室,Eero Mina, beauty studio, 中正三路110號">
+        <meta name="description" content="Eero Mina Studio 位於高雄市新興區中正三路110號，提供霧眉、飄眉與客製化眉型設計服務，歡迎透過 Instagram 私訊預約。">
+        <meta name="keywords" content="高雄霧眉,高雄飄眉,高雄紋眉,高雄美容工作室,Eero Mina Studio">
         <meta name="author" content="Eero Mina Studio">
+        <link rel="canonical" href="https://elliotcs30.github.io/eero-mina-studio/">
+
         <meta property="og:title" content="Eero Mina Studio | 高雄霧眉飄眉工作室">
         <meta property="og:description" content="高雄專業霧眉、飄眉美容工作室">
-        <meta property="og:image" content="https://github.com/elliotcs30/eero-mina-studio/images/favicon.ico">
+        <meta property="og:image" content="https://elliotcs30.github.io/eero-mina-studio/images/work1.jpg">
         <meta property="og:type" content="website">
 
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
@@ -35,12 +35,14 @@
 
         <section class="hero">
             <h1>Eero Mina Studio</h1>
-            <p>Beauty Studio</p>
-
-            <a href="works.html" class="btn">View Works</a>
-            <a href="https://instagram.com/eero_mina" class="btn" target="_blank">Follow Instagram</a>
+            <p>Kaohsiung Beauty Studio</p>
+            <a href="works.html" class="btn">
+                View Works
+            </a>
+            <a href="booking.html" class="btn">
+                Book Appointment
+            </a>
         </section>
-
         <section>
             <h2>Works</h2>
             <div class="works-grid">
@@ -55,37 +57,65 @@
                 </div>
             </div>
         </section>
-
         <section class="seo-text">
             <p>
-            Eero Mina Studio 位於高雄市新興區，
-            提供專業霧眉、飄眉與客製化眉型設計服務。<br />
-            地址：高雄市新興區中正三路110號，
-            歡迎透過 LINE 預約諮詢。
+                Eero Mina Studio 為高雄霧眉與飄眉美容工作室，<br>
+                位於高雄市新興區中正三路110號。<br>
+                <br>
+                我們提供： 霧眉 x 飄眉 x 客製化眉型設計服務，<br>
+                專業技術與優質體驗是我們的承諾。<br>
+                <br>
+                歡迎透過 Instagram 私訊預約。<br>
             </p>
         </section>
 
         <footer>
-            <p>© Eero Mina Studio</p>
-            <a href="https://instagram.com/eero_mina" target="_blank">Instagram</a>
+            <p class="footer-info">
+            高雄霧眉 · 高雄飄眉 · 高雄紋眉工作室<br>
+            Eero Mina Studio<br>
+            地址：高雄市新興區中正三路110號
+            </p>
+
+            <p class="footer-copy">
+            © 2026 Eero Mina Studio · Powered by Wandeli Technology
+            </p>
         </footer>
 
         <div id="lightbox" onclick="closeImage()">
             <img id="lightbox-img">
         </div>
-
-        <a href="https://line.me/R/ti/p/@eeromina" class="line-float" target="_blank">
-            <i class="fa-brands fa-line"></i> LINE 預約
+        <a href="https://instagram.com/eero_mina" class="ig-float" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
         </a>
-    </body>
 
-    <script>
-        function openImage(img) {
-            document.getElementById("lightbox").style.display="flex"
-            document.getElementById("lightbox-img").src = img.src
-        }
-        function closeImage() {
-            document.getElementById("lightbox").style.display="none"
-        }
-    </script>
+        <script>
+            function openImage(img) {
+                document.getElementById("lightbox").style.display = "flex";
+                document.getElementById("lightbox-img").src = img.src;
+            }
+
+            function closeImage() {
+                document.getElementById("lightbox").style.display = "none";
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BeautySalon",
+                "name": "Eero Mina Studio",
+                "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "中正三路110號",
+                "addressLocality": "新興區",
+                "addressRegion": "高雄市",
+                "addressCountry": "TW"
+                },
+                "url": "https://elliotcs30.github.io/eero-mina-studio",
+                "sameAs": [
+                "https://instagram.com/eero_mina"
+                ]
+            }
+        </script>
+    </body>
 </html>

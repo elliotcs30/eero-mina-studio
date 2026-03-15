@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elliotcs30.github.io/eero-mina-studio/sitemap.xml
